@@ -5,17 +5,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @SpringBootApplication
 @RestController
+public class SpringBootDockerApplication {
 
-public class Job1Application {
 	@GetMapping("/message")
 	public String getMessage() {
-	return "Welcome to RJIL team...!!";
+		return "Welcome to RJIL team...!!";
 	}
+
 	public static void main(String[] args) {
-		SpringApplication.run(Job1Application.class, args);
+		SpringApplication.run(SpringBootDockerApplication.class, args);
 	}
 
 }
