@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Job1Application {
-	
+	@GetMapping("/message")
 	public String getMessage() {
 	return "Welcome to RJIL team...!!";
 	}
